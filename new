@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Fix ofrece soluciones de reparación y mantenimiento para dispositivos tecnológicos. Contáctanos para un servicio rápido y eficiente.">
+    <title>Smart Fix</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4a148c;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 0;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            border: 2px solid #d1c4e9;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #311b92;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .cta-button {
+            background-color: #311b92;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #4527a0;
+            transform: scale(1.05);
+        }
+
+        .testimonial {
+            background-color: #f7f7fa;
+            padding: 20px;
+            border-radius: 8px;
+            font-style: italic;
+            margin: 20px 0;
+            color: #333;
+            border-left: 4px solid #311b92;
+            transition: background-color 0.3s;
+        }
+
+        .testimonial:hover {
+            background-color: #e8eaf6;
+        }
+
+        footer {
+            background-color: #311b92;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .social-icons {
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f4f4f9; /* Cambia el color al pasar el mouse */
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Fix - Soluciones Electrónicas</h1>
+        <p>Reparación de dispositivos tecnológicos con un toque profesional.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>Nuestros Servicios</h2>
+            <p>En <strong>Smart Fix</strong>, somos expertos en la reparación y mantenimiento de dispositivos tecnológicos como PCs, laptops, y otros equipos electrónicos. Nuestra misión es brindarte una solución rápida, efectiva y duradera, para que tu tecnología esté siempre a punto.</p>
+            <p>Ya sea que tu equipo necesite una reparación urgente o un mantenimiento general, estamos aquí para ayudarte.</p>
+        </div>
+
+        <div class="section">
+            <h2>¿Por qué elegir Smart Fix?</h2>
+            <p>Estos son los motivos por los que nuestros clientes confían en nosotros:</p>
+            <ul>
+                <li><strong>Soluciones rápidas y eficientes:</strong> Entregamos resultados de alta calidad en el menor tiempo posible.</li>
+                <li><strong>Piezas de calidad garantizada:</strong> Utilizamos componentes de primera línea para asegurar que tus dispositivos duren más tiempo.</li>
+                <li><strong>Experiencia comprobada:</strong> Con años en el mercado, sabemos lo que hacemos.</li>
+                <li><strong>Atención personalizada:</strong> Nos preocupamos por entender y resolver tus necesidades específicas.</li>
+            </ul>
+            <a href="#contacto" class="cta-button">Contáctanos ahora</a>
+        </div>
+
+        <div class="section">
+            <h2>Testimonios de nuestros clientes</h2>
+            <div class="testimonial">
+                <p>"Gracias a Smart Fix, la PC de mi hijo funciona excelentemente." - Fernando R.</p>
+            </div>
+        </div>
+
+        <div class="section" id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Si tienes un dispositivo que necesita reparación o deseas más información sobre nuestros servicios, no dudes en contactarnos. Estamos a tu disposición.</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+            <p><strong>Teléfono:</strong> 097886067</p>
+            <p><strong>Email:</strong> smart.fix.contacto1@gmail.com</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Smart Fix - Todos los derechos reservados</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24px" height="24px"><path d="..."/></svg>
+            </a>
+            <a href="https://x.com/SmartFi37836511?t=2pjTBMvyEkiiuTUKQQ64Fg&s=09" target="_blank" title="Twitter" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24px" height="24px"><path d="..."/></svg>
+            </a>
+            <a href="https://www.instagram.com/smartfixig/profilecard/?igsh=MWN5MTU4amswb2NoZA==" target="_blank" title="Instagram" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24px" height="24px"><path d="..."/></svg>
+            </a>
+        </div>
+        <p><a href="/privacy-policy" style="color:white;">Política de Privacidad</a> | <a href="/terms" style="color:white;">Términos de Servicio</a></p>
+    </footer>
+
+</body>
+</html>
