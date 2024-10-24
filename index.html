@@ -133,6 +133,41 @@
                 padding: 10px 20px;
             }
         }
+
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Espacio entre los campos */
+        }
+        
+        .form-group {
+            flex: 1;
+            min-width: 250px; /* Tamaño mínimo de los campos */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input, .form-group textarea {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        
+        textarea {
+            height: 100px; /* Altura del campo de texto */
+            resize: vertical; /* Permitir cambiar el tamaño vertical */
+        }
+
+        button.cta-button {
+            margin-top: 10px;
+            align-self: flex-start;
+        }
     </style>
 </head>
 <body>
@@ -169,65 +204,24 @@
             </div>
         </div>
 
-      <div class="section" id="contacto">
-    <h2>Contáctanos</h2>
-    <p>Si tienes un dispositivo que necesita reparación o deseas más información sobre nuestros servicios, no dudes en contactarnos. Estamos a tu disposición.</p>
-    <form action="submit_form.php" method="post" class="contact-form">
-        <div class="form-group">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="cta-button">Enviar</button>
-    </form>
-    <p><strong>Teléfono:</strong> 097886067</p>
-    <p><strong>Email:</strong> smart.fix.contacto1@gmail.com</p>
-</div>
-
-<style>
-    .contact-form {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px; /* Espacio entre los campos */
-    }
-    
-    .form-group {
-        flex: 1;
-        min-width: 250px; /* Tamaño mínimo de los campos */
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .form-group label {
-        margin-bottom: 8px;
-        font-weight: bold;
-    }
-    
-    .form-group input, .form-group textarea {
-        padding: 10px;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-    }
-    
-    textarea {
-        height: 100px; /* Altura del campo de texto */
-        resize: vertical; /* Permitir cambiar el tamaño vertical */
-    }
-
-    button.cta-button {
-        margin-top: 10px;
-        align-self: flex-start;
-    }
-</style>
-      </form>
+        <div class="section" id="contacto">
+            <h2>Contáctanos</h2>
+            <p>Si tienes un dispositivo que necesita reparación o deseas más información sobre nuestros servicios, no dudes en contactarnos. Estamos a tu disposición.</p>
+            <form action="submit_form.php" method="post" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
             <p><strong>Teléfono:</strong> 097886067</p>
             <p><strong>Email:</strong> smart.fix.contacto1@gmail.com</p>
         </div>
@@ -247,7 +241,6 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="24px" height="24px"><path d="..."/></svg>
             </a>
         </div>
-        <p><a href="/privacy-policy" style="color:white;">Política de Privacidad</a> | <a href="/terms" style="color:white;">Términos de Servicio</a></p>
     </footer>
 
 </body>
